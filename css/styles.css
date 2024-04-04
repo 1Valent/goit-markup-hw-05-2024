@@ -760,7 +760,7 @@ p {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type="checkbox"]:checked + .agreement-checkbox {
+.agreement-input:checked + .agreement-label > .agreement-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
