@@ -492,7 +492,7 @@
     </footer>
     <!-- #endregion -->
     <!-- #region modal-overlay -->
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button class="modal-button" type="button">
           <svg class="modal-button-icon" width="8" height="8">
@@ -548,19 +548,17 @@
               </svg>
             </div>
           </div>
-          <div class="modal-wrapper">
+          <div class="modal-wrapper comment">
             <label class="modal-label" for="user-comment">Comment</label>
-            <div class="modal-field">
-              <textarea
-                class="user-comment"
-                name="user-comment"
-                id="user-comment"
-                rows="7"
-                placeholder="Text input"
-                required
-                maxlength="1000"
-              ></textarea>
-            </div>
+            <textarea
+              class="user-comment"
+              name="user-comment"
+              id="user-comment"
+              rows="7"
+              placeholder="Text input"
+              required
+              maxlength="1000"
+            ></textarea>
           </div>
           <label class="agreement">
             <input type="checkbox" class="visually-hidden" />
