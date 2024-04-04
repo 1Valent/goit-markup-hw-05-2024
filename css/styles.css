@@ -504,7 +504,7 @@ p {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 408px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   min-height: 584px;
   background: #fcfcfc;
   border-radius: 4px;
@@ -641,8 +641,7 @@ p {
   padding: 8px 16px;
 }
 .modal-wrapper {
-  padding: 72px 24px 24px 24px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .modal-label {
   display: block;
@@ -665,15 +664,15 @@ p {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
 
-  transition: border-color 300ms ease-in;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-field-icon {
   position: absolute;
   top: 50%;
-  left: 19px;
+  left: 16px;
   transform: translateY(-50%);
   fill: #2e2f42;
-  transition: fill 300ms ease-in;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field-input:focus {
@@ -703,7 +702,7 @@ p {
 .modal-field-input:not(:placeholder-shown):invalid:required ~ .error {
   opacity: 1;
 }
-.user_comment {
+.user-comment {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -711,12 +710,12 @@ p {
   color: #8e8f99;
 }
 
-.user_comment:focus {
+.user-comment:focus {
   border: 1px solid #4d5ae5;
   transition: border-color 300ms ease-in;
 }
 
-.user_comment::placeholder {
+.user-comment::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
 .agreement {
